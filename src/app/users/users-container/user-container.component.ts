@@ -8,7 +8,7 @@ import {UserInfo, UserModel} from '../../models/user.model';
 })
 export class UserContainerComponent implements OnInit {
 
-  private currentUser: UserModel;
+  public currentUser: UserModel;
   constructor() {
 
     this.currentUser;

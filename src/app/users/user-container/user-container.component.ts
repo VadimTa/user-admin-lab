@@ -13,7 +13,7 @@ export class UserContainerComponent implements OnInit {
 
   constructor() {
 
-
+    console.log('test')
   }
 
 

@@ -1,14 +1,20 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { UsersListComponent } from './users-list/users-list.component';
-import { UserEditComponent } from './user-edit/user-edit.component';
-import {UserContainerComponent} from './user-container/user-container.component';
+export class UserModel {
 
-@NgModule({
-  imports: [
-    CommonModule
-  ],
-  declarations: [UserContainerComponent, UsersListComponent, UserEditComponent],
-  exports: [UserContainerComponent]
-})
-export class UsersModule { }
+  constructor(
+    public id: number,
+    public username: string= '',
+    public email: string= '',
+    public info: UserInfo= undefined
+  ){}
+};
+
+export class UserInfo{
+
+  constructor(
+    public firstName: string= '',
+    public lastName: string= '',
+    public jobTitle: string= '',
+    public avatar: string= '',
+    public phoneNumber: string= ''
+  ){}
+};

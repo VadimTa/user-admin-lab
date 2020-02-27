@@ -8,7 +8,7 @@ import {UserModel} from '../../models/user.model';
 })
 export class UsersListComponent implements OnInit {
 
-  private currentUser: UserModel;
+  currentUser: UserModel;
 
   @Input()
   users: UserModel[];

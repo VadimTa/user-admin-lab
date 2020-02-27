@@ -8,8 +8,8 @@ import {UserInfo, UserModel} from '../../models/user.model';
 })
 export class UserContainerComponent implements OnInit {
 
-  private currentUser: UserModel;
-  private users: UserModel[];
+  currentUser: UserModel;
+  users: UserModel[];
 
   constructor() {
 
